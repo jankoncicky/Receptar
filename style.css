@@ -33,7 +33,7 @@ body { text-align: left;
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
+        }
     #logo > * {
         margin: 0 0 0 50px;
     }
@@ -72,3 +72,6 @@ body { text-align: left;
     nav ul a:hover, .aktivni a {
         border-bottom: 2px solid #f1e312;
     }
+
+
+
