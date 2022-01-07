@@ -3,4 +3,4 @@ Vejdi a neuškoď
 
 
 
-Jan Končický
+Jan Končický & Lukashenko Burděj 
