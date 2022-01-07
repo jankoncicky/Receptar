@@ -67,3 +67,36 @@ nav ul a {
 nav ul a:hover, .aktivni a {
     border-bottom: 2px solid #ffffff;
 }
+
+.logo {
+    height: 100%;
+    margin-right: 20px;
+    padding-top: 2%;
+}
+
+.welcome {
+    margin-top: 10%;
+}
+
+.vyhledavac {
+    margin-top: 2.8%;
+}
+
+.nadpis_h1 {
+    font-family:sans-serif;
+    margin-top: 2.3%;
+}
+
+.recepty_text {
+    margin-top: 10%; 
+}
+
+.kontakty_text {
+    margin-top: 10%;
+}
+
+.mapa {
+    width: 600px;
+    height: 450px;
+    margin-left: 0%;
+}
