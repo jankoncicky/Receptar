@@ -95,3 +95,7 @@ nav ul a:hover, .aktivni a {
     height: 450px;
     margin-left: 0%;
 }
+
+article {
+    border: black solid 1px;
+}
