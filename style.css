@@ -97,5 +97,7 @@ nav ul a:hover, .aktivni a {
 }
 
 article {
-    border: 1px solid black ;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
 }
