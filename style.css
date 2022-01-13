@@ -97,6 +97,7 @@ nav ul a:hover, .aktivni a {
 }
 
 article {
+    border: 0px;
     box-shadow: 2px 2px 7px #1c2228;
 }
 
