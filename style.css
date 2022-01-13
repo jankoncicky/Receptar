@@ -110,7 +110,4 @@ article {
 .vlevo{
     float:left;
     padding: 10px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
 }
