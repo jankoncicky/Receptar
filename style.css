@@ -98,6 +98,7 @@ nav ul a:hover, .aktivni a {
 
 article {
     border: 1px;
+    border-color: #F9F9F9;
     box-shadow: 2px 2px 7px #1c2228;
 }
 
@@ -110,4 +111,6 @@ article {
 .vlevo{
     float:left;
     padding: 10px;
+    border-style: solid;
+    border-color: black;
 }
