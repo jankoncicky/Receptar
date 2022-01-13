@@ -104,5 +104,9 @@ article {
 
 .obrazek {
     width: 10%;
-    left: 0%;
+}
+
+.textdlazdice {
+    margin-left: 100 px;
+
 }
