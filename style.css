@@ -11,11 +11,10 @@
 
 }
 
+/* Proč dvakrát Poppins? Jednou bez bold, jednou s. Není blbost? Jak se následně rozliší?*/
 body {
-    text-align: left;
     color: #0a294b;
     font-family: Poppins;
-    background: #F9F9F9;
 }
 
 section p {
@@ -33,11 +32,12 @@ body>header {
     display: flex;
     justify-content: space-evenly;
     top: 0;
+    left: 0;
     background: #be6b1d;
     color: white;
     width: 100%;
-    z-index: 1;
 }
+
 nav ul {
     margin: 0;
     height: 100%;
@@ -66,8 +66,7 @@ nav ul a:hover, .aktivni a {
 
 .logo {
     height: 100%;
-    margin-right: 20px;
-    padding-top: 2%;
+    margin: auto;
 }
 
 .welcome {
@@ -75,18 +74,16 @@ nav ul a:hover, .aktivni a {
 }
 
 .vyhledavac {
-    margin-top: 2.8%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .nadpis_h1 {
-    margin-top: 2.3%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .recepty_text {
-    margin-top: 10%; 
-}
-
-.kontakty_text {
     margin-top: 10%;
 }
 
@@ -94,19 +91,87 @@ nav ul a:hover, .aktivni a {
     width: 600px;
     height: 450px;
     margin-left: 0%;
+    border-radius: 8px;
 }
 
-article {
-    border: 1px;
-    border-color: #F9F9F9;
+.recept {
+    border: 1px solid Black;
     box-shadow: 2px 2px 7px #1c2228;
+    background-color: rgba(110, 110, 110, 0.2);
+    margin: 15px;
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 25px;
 }
+
+section:first-child {
+    width: 25%;
+    text-align: center;
+}
+
+.nadpisystranky {
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+.nadpisdlazdice {
+    margin: 0px;
+    padding-bottom: 20px;
+    /* Postupné vykonávání, nejdřívěe všude 0, pak tady 10.*/
+    text-align: center;
+    font-size: 38px;
+    word-break: break-word;
+}
+
 .textdlazdice {
     text-align: center;
     margin: 0px;
+    font-size: 28px;
+    /* Přidáno, protože jinak vypadaly nadpisy moc malé...*/
+    word-break: break-word;
+    /* Rozdělování slov*/
 }
-.vlevo{
+
+.vlevo {
     padding: 10px;
     border-style: solid;
     border-color: black;
+    border-radius: 6px;
+    max-width: 75%;
+    margin-top: 10px;
+}
+
+.vlevotext {
+    display: flex;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.vlevotextp {
+    margin: auto;
+    font-size: 24px;
+}
+
+.vlevoul {
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.ikony {
+    max-width: 15%;
+}
+
+li {
+    font-size: 20px;
+}
+
+.vpravo {
+    width: 75%;
+    padding: 20px;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
 }
