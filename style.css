@@ -10,8 +10,6 @@
     font-weight: bold;
 
 }
-
-/* Proč dvakrát Poppins? Jednou bez bold, jednou s. Není blbost? Jak se následně rozliší?*/
 body {
     color: #0a294b;
     font-family: Poppins;
@@ -118,7 +116,6 @@ section:first-child {
 .nadpisdlazdice {
     margin: 0px;
     padding-bottom: 20px;
-    /* Postupné vykonávání, nejdřívěe všude 0, pak tady 10.*/
     text-align: center;
     font-size: 38px;
     word-break: break-word;
@@ -128,9 +125,7 @@ section:first-child {
     text-align: center;
     margin: 0px;
     font-size: 28px;
-    /* Přidáno, protože jinak vypadaly nadpisy moc malé...*/
     word-break: break-word;
-    /* Rozdělování slov*/
 }
 
 .vlevo {
