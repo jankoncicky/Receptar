@@ -34,6 +34,7 @@ body>header {
     background: #be6b1d;
     color: white;
     width: 100%;
+    z-index: 1;
 }
 
 nav ul {
@@ -65,6 +66,7 @@ nav ul a:hover, .aktivni a {
 .logo {
     height: 100%;
     margin: auto;
+    animation: rotation 4s infinite linear;
 }
 
 .welcome {
@@ -91,6 +93,10 @@ nav ul a:hover, .aktivni a {
     margin-left: 0%;
     border-radius: 8px;
 }
+.prihlaseni{
+    padding-top: 10%;
+    text-align: center;
+}
 
 .recept {
     border: 1px solid Black;
@@ -100,6 +106,26 @@ nav ul a:hover, .aktivni a {
     display: flex;
     border-radius: 10px;
     margin-bottom: 25px;
+    
+}
+#animace:hover {
+    animation: pulse 0.9s ease-out;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 section:first-child {
