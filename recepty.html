@@ -10,7 +10,7 @@
 <body>
     <header>
         <a href="index.html"><img src="./Fotky/white logo.png" alt="logo" class="logo"></a>
-        <h1 class="nadpis_h1">Kuchařka Lil Jummy</h1>
+        <h1 class="nadpis_h1">Lil Jummy</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Domů</a></li>
@@ -157,7 +157,11 @@
     <footer>
         Vytvořili &copy;JKLB 2022
     </footer>
-
+    <script>
+        var loadtime = Date.now();setInterval(() => {        let newTime = new Date();        let dif = new Date(newTime.getTime() - loadtime);    
+    document.getElementById("cas").innerText = dif.toLocaleTimeString('cs-CZ', { timeZone: 'UTC' });
+    document.getElementById("cas2").innerText = newTime.toLocaleTimeString('cs-CZ', { timeZone: 'Europe/Prague' });}, 1000);
+    </script>
 </body>
 
 </html>
