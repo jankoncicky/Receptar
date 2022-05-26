@@ -73,12 +73,12 @@ nav ul a:hover, .aktivni a {
     margin-top: 20vh;
 }
 
-.vyhledavac {
-    margin-top: auto;
-    margin-bottom: auto;
+.mid{
+    text-align: center;
+    font-size: 20px;
 }
 
-.nadpis_h1 {
+.nadpis_h1 , .vyhledavac {
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -118,10 +118,10 @@ nav ul a:hover, .aktivni a {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
   70% {
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
   100% {
     transform: scale(1);
@@ -135,7 +135,7 @@ section:first-child {
 
 .nadpisystranky {
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     margin-left: 15px;
 }
 
@@ -196,3 +196,11 @@ footer {
     margin-top: 50px;
     text-align: center;
 }
+#cas, #cas2, #cas3 {
+    font-size:20px;
+    margin-left: 15px
+}
+
+  
+
+  
