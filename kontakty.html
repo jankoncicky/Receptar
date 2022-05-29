@@ -20,15 +20,36 @@
             </ul>
         </nav>
         <form action="" method="GET" class="vyhledavac">
-            <input type="text" name="search" placeholder="Vyhledat">
+            <input type="text" name="search" placeholder="Vyhledat" size="10">
             <input type="submit" value="Odeslat">
         </form>
     </header>
-    <article style="display: flex; margin-top: 20vh;">
-        <section style="width: 50%;">
+    <article style="display: flex; margin-top: 120px;" id="kont_art">
+        <section id="kont_text">
             <p class="kontakty_text">
                 Pokud nás chcete kontaktovat, neváhejte se ozvat na níže uvedené kontakty:
             </p>
+            <table id="kont" cellspacing="0">
+            </table>
+            <script>
+                let table = document.getElementById("kont"); //Do promenne table si priradi element tabulky - ten vybere dle ID.
+                const udaje = ["Jméno,Příjmení,Zaměření","Jan,Končický,HTML-CSS", "Lukáš,Burděj,CSS-JS"]; //Do const udaje, ktere chcete prirazovat, jedna se o pole, kazda polozka v poli jsou udaje jedne osoby/nadpisy, jednotlive podrobnosti jsou oddelene carkami.
+                for(let x = 0; x<3;x++) { //Mozna zbytecne slozite??? //Cyklus, vykona se trikrat. - pokazde vytvori jeden radek tabulky.
+                    let tr = document.createElement("tr"); //V promenne tr se vytvori element tr - radek tabulky.
+                    let udaj = udaje[x].split(','); //Do promenne udaj priradi: vezme promennou udaje a to x v zavorce urcuje, kolikatou polozku pole to vezme. X je z prvniho cyklu, tzn. x urcuje aktualni vypisovany radek. Kdyz tedy x bude 1, vezme to "Lukáš,Burděj,Programátor". Jakmile to tento string z pole získá, aplikuje se na nej metoda split, která rozdeluje string dle nejakeho zadaneho znaku - muze byt i vice. V nasem pripade tedy dame parametr ',', coz znamena, ze string rozdeli dle znamenka carky. Z "Lukáš,Burděj,Programátor" tedy máme prvky: "Lukáš" "Burděj" a "Programátor", ty se ulozi do pole. V promenne udaj tedy nyni mame pole["Lukáš", "Burděj", "Programátor"].
+                    for(let i = 0; i<3; i++) { //Dalsi cyklus, ten bude doplnovat jednotlive td/th - bunky, vykona se trikrat, protoze chceme tri sloupce.
+                        if(x == 0) { //Podminka, kdyz se x bude rovnat 0 - tzn. cyklus pobezi poprve a bude tedy vypisovat prvni radek tabulky, tak se vytvori th - tedy záhlaví; v opacnem pripade vytvori normalni bunku td.
+                            var bunka = document.createElement("th");
+                        }
+                        else {
+                            var bunka = document.createElement("td");
+                        }
+                        bunka.innerText = udaj[i]; // Mame uz promennou udaj a jak jsem jiz psal, máme v ní pole. Z toho duvodu tedy musime urcit, kolikatou polozku z toho pole chceme ziskaz, proto do zavorky dame i. I totiz urcuje aktuanlne vypisovany sloupec, a tak kdyz je i napr. 1, vypise se Burděj - příjmení má být totiž ve druhém sloupci.
+                        tr.appendChild(bunka); //Do tr, což je radek tabulky, se bunka prida jako potomek.
+                    }
+                    table.appendChild(tr); //Do table se priradi tr jako potomek, tzn. do tabulky se priradi dany radek.
+                }
+            </script>
             <p>
 
                 <strong>email:</strong> jan.koncicky@infis.cz/lukas.burdej@infis.cz
@@ -42,7 +63,7 @@
                 style="border:0; max-width: 80%;" allowfullscreen="" loading="lazy" class="mapa">
             </iframe>
         </section>
-        <section>
+        <section id="zdroj_skola">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/LR2yX8QN700"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -67,7 +88,7 @@
         </section>
     </article>
     <footer>
-        Vytvořily &copy;JKLB 2022
+        Vytvořili &copy;JKLB 2022
     </footer>
 </body>
 
