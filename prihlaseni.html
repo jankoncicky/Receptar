@@ -18,17 +18,28 @@
             </ul>
         </nav>
         <form action="" method="GET" class="vyhledavac">
-            <input type="text" name="search" placeholder="Vyhledat">
+            <input type="text" name="search" placeholder="Vyhledat" size="10">
             <input type="submit" value="Odeslat">
         </form>
     </header>
-    <form action="" method="GET" class="prihlaseni">
+    <form action="" method="GET" class="prihlaseni" id="login">
+        <br>
         <label for="fname">Uživatelské jméno</label><br>
         <input type="text" id="username" name="username"><br>
         <label for="lname">Heslo</label><br>
         <input type="password" id="password" name="password"><br><br>
-        <input type="submit" value="Submit">
-      
+        <input type="button" onclick="a();" value="Přihlásit se">
+    </form>
+    <section class="mid">
+        <p>Přihlašte se a získejte přístup ke všem lahodným receptům!</p>
+        <img style="animation: imgs 18s infinite; width: 12%;" src="Fotky/435aa7569500869a7654fe4fe7ffdb88-facebook.jpg">
+    </section>
+    <script>
+        function a() {
+            let form = new FormData(document.forms.login);
+            window.alert("Vaše přihlašovací jméno je: "+(form.get('username'))+" a heslo: "+(form.get('password')));
+        }
+    </script>
     <footer>
         Vytvořili &copy;JKLB 2022
     </footer>
