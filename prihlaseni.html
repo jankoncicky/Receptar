@@ -28,16 +28,23 @@
         <input type="text" id="username" name="username"><br>
         <label for="lname">Heslo</label><br>
         <input type="password" id="password" name="password"><br><br>
-        <input type="button" onclick="a();" value="Přihlásit se">
+        <input type="button" onclick="login();" value="Přihlásit se">
     </form>
     <section class="mid">
         <p>Přihlašte se a získejte přístup ke všem lahodným receptům!</p>
         <img style="animation: imgs 18s infinite; width: 12%;" src="Fotky/435aa7569500869a7654fe4fe7ffdb88-facebook.jpg">
     </section>
     <script>
-        function a() {
-            let form = new FormData(document.forms.login);
-            window.alert("Vaše přihlašovací jméno je: "+(form.get('username'))+" a heslo: "+(form.get('password')));
+        function login() {
+           var a = document.getElementById("username").value
+           var b = document.getElementById("password").value
+           if(a == "haf" && b == "mnau"){
+               alert("Zadané heslo je správně")
+
+           }else {
+             alert("Zadané heslo je špatně")
+           }
+           
         }
     </script>
     <footer>
